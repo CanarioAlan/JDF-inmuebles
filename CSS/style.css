@@ -1,0 +1,210 @@
+@font-face {
+  font-family: trajanPro;
+  src: url(../fonts/TrajanProRegular.ttf);
+}
+:root {
+  /* fuentes */
+  --Ftitulo: "trajanPro", serif;
+  --Fsubtitulo: "DM Serif Text", serif;
+  --Fgeneral: "Montserrat", sans-serif;
+  --fgeneral2: "PT Serif", serif;
+  /* colores  */
+  --CGrisClaro: #ebe8e8;
+  --Cblanco: #f5f5f7;
+  --Cgris: #b7bbc7;
+  --Cceleste: #20b9fc;
+  --Cazul: #5632fa;
+  --CNegro: #000000;
+}
+/* rem vale a 10px  */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+/* generales */
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: var(--CGrisClaro);
+}
+/* header  */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__logo {
+  width: 20rem;
+}
+.header__link {
+  text-decoration: none;
+  color: var(--CNegro);
+  font-family: var(--fgeneral2);
+  font-size: 3rem;
+  padding: 2rem;
+  background-image: linear-gradient(to right, #20b9fc, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.header__link:before {
+  content: "";
+  background: var(--Cceleste);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.header__link:hover {
+  background-position: 0;
+}
+.header__link:hover::before {
+  width: 100%;
+}
+/* precentacion - banner  */
+.presentacion {
+  width: 100%;
+  height: calc(100vh - 112.44px);
+  background-image: url(../img/banner3.jpg);
+  background-position-y: -50rem;
+  background-repeat: no-repeat;
+}
+.presentacion__titulo {
+  display: inline-block;
+  font-size: 8rem;
+  color: var(--Cazul);
+  font-family: var(--Ftitulo);
+  position: relative;
+  top: 10rem;
+  left: 8%;
+}
+.presentacion__titulo-contiguo {
+  display: inline-block;
+  font-size: 4rem;
+  color: var(--Cazul);
+  font-family: var(--Fsubtitulo);
+  position: relative;
+  top: 10rem;
+  left: 8%;
+}
+.presentacion__slogan {
+  width: 60rem;
+  font-size: 4rem;
+  position: relative;
+  top: 8rem;
+  left: 9%;
+}
+/*propiedades populares */
+.propiedadesPopulares__targetas {
+  display: flex;
+  gap: 1rem;
+}
+.propiedadesPopulares {
+  text-align: center;
+  padding: 0 5px;
+}
+.propiedadesPopulares h2 {
+  font-family: var(--Fsubtitulo);
+  font-weight: 200;
+  font-size: 3rem;
+}
+.ropiedadesPopulares__targeta {
+  width: 20rem;
+  height: 30rem;
+  border: solid 1px var(--CNegro);
+  position: relative;
+  border-radius: 1rem;
+}
+.propiedadesPopulares__NombreDePropiedad {
+  font-family: var(--fgeneral2);
+  font-weight: 100;
+  background-color: var(--Cgris);
+  padding: 1rem;
+  color: var(--Cblanco);
+  border-radius: 1rem 1rem 0 0;
+}
+.propiedadesPopulares__ImgDePropiedad {
+  max-width: 20rem;
+  margin: 0 0 5px 0;
+}
+.propiedadesPopulares__DescripcionDePropiedad {
+  font-weight: 100;
+  text-align: start;
+  margin-left: 2px;
+}
+.ropiedadesPopulares__targeta a {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--CNegro);
+}
+.ropiedadesPopulares__targeta a:hover {
+  background-color: var(--Cgris);
+  border-radius: 1rem;
+  color: var(--Cblanco);
+}
+/*conocenos*/
+.conocenos {
+  text-align: center;
+}
+.conocenos_titulo {
+  font-family: var(--Fsubtitulo);
+  font-weight: 200;
+  font-size: 3rem;
+}
+.conocenos__descripcion {
+  text-align: start;
+}
+/*footer*/
+.footer {
+  background-color: var(--Cblanco);
+}
+.footer__navegacion {
+  display: flex;
+}
+.footer__navegacion-links {
+  text-decoration: none;
+  color: var(--CNegro);
+  font-family: var(--fgeneral2);
+  font-size: 2rem;
+  padding: 2rem;
+  background-image: linear-gradient(to right, #b7bbc7, #b7bbc7 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.footer__navegacion-links:before {
+  content: "";
+  background: var(--Cgris);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.footer__navegacion-links:hover {
+  background-position: 0;
+}
+.footer__navegacion-links:hover::before {
+  width: 100%;
+}
