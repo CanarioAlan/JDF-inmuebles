@@ -34,13 +34,18 @@ main {
 /* header  */
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .header__logo {
   width: 20rem;
 }
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
 .header__link {
+  text-transform: capitalize;
   text-decoration: none;
   color: var(--CNegro);
   font-family: var(--fgeneral2);
@@ -80,35 +85,30 @@ main {
   background-position-y: -50rem;
   background-repeat: no-repeat;
 }
+.presentacion__textos {
+  width: 60rem;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
 .presentacion__titulo {
-  display: inline-block;
-  font-size: 8rem;
+  font-size: 12rem;
+  margin: 0;
   color: var(--Cazul);
   font-family: var(--Ftitulo);
-  position: relative;
-  top: 10rem;
-  left: 8%;
 }
-.presentacion__titulo-contiguo {
-  display: inline-block;
-  font-size: 4rem;
-  color: var(--Cazul);
-  font-family: var(--Fsubtitulo);
-  position: relative;
-  top: 10rem;
-  left: 8%;
+.presentacion__titulo span {
+  font-size: 5.5rem;
 }
-.presentacion__slogan {
-  width: 60rem;
-  font-size: 4rem;
-  position: relative;
-  top: 8rem;
-  left: 9%;
+.presentacion__matricula {
+  color: red;
+  text-align: end;
 }
 /*propiedades populares */
 .propiedadesPopulares__targetas {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 .propiedadesPopulares {
   text-align: center;
@@ -118,13 +118,15 @@ main {
   font-family: var(--Fsubtitulo);
   font-weight: 200;
   font-size: 3rem;
+  color: var(--Cceleste);
+  text-transform: uppercase;
 }
 .ropiedadesPopulares__targeta {
   width: 20rem;
   height: 30rem;
   border: solid 1px var(--CNegro);
-  position: relative;
   border-radius: 1rem;
+  text-align: center;
 }
 .propiedadesPopulares__NombreDePropiedad {
   font-family: var(--fgeneral2);
@@ -141,15 +143,15 @@ main {
 .propiedadesPopulares__DescripcionDePropiedad {
   font-weight: 100;
   text-align: start;
-  margin-left: 2px;
+  margin-bottom: 5px;
+  padding: 1rem;
 }
 .ropiedadesPopulares__targeta a {
   text-decoration: none;
-  position: absolute;
   bottom: 0;
   right: 40%;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   color: var(--CNegro);
 }
 .ropiedadesPopulares__targeta a:hover {
@@ -157,26 +159,40 @@ main {
   border-radius: 1rem;
   color: var(--Cblanco);
 }
-/*conocenos*/
-.conocenos {
+/*mapas de propiedades*/
+.mapaDePropiedades {
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
+  padding: 2rem 0;
 }
-.conocenos_titulo {
+.mapaDePropiedades-titulo {
+  font-size: 2.5rem;
+  padding: 2rem;
   font-family: var(--Fsubtitulo);
-  font-weight: 200;
-  font-size: 3rem;
-}
-.conocenos__descripcion {
-  text-align: start;
+  color: var(--Cceleste);
+  text-transform: uppercase;
 }
 /*footer*/
 .footer {
+  background-color: var(--CGrisClaro);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.footer-nav {
+  grid-column: 1 / 3;
+  text-align: center;
   background-color: var(--Cblanco);
 }
 .footer__navegacion {
   display: flex;
+  justify-content: space-evenly;
 }
 .footer__navegacion-links {
+  text-transform: capitalize;
   text-decoration: none;
   color: var(--CNegro);
   font-family: var(--fgeneral2);
@@ -207,4 +223,53 @@ main {
 }
 .footer__navegacion-links:hover::before {
   width: 100%;
+}
+/* footer informacion  */
+.footer__informacion {
+  display: flex;
+  column-gap: 3rem;
+  justify-content: center;
+}
+.footer__infomarcion-titulo {
+  padding: 1.5rem;
+}
+.footer__redes__links,
+.footer__contactos-liks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 1rem;
+  align-items: end;
+}
+.footer__links-info {
+  color: var(--CNegro);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 10rem;
+  text-align: end;
+  background-repeat: no-repeat;
+  background-size: 3.7rem;
+}
+.Redes__sociales-facebook {
+  background-image: url(../img/logo-faceboock.png);
+}
+.redes__sociales-instagram {
+  background-image: url(../img/logo-instagram.png);
+}
+.footer__contacto-cel {
+  background-image: url(../img/logo-whatsapp.png);
+}
+.footer__contacto-tel {
+  background-image: url(../img/logo-phone.png);
+}
+.footer__ubicacion {
+  text-align: center;
+}
+.footer__ubicacion-title {
+  padding: 1.5rem;
+}
+.creador {
+  display: flex;
+  justify-content: space-evenly;
 }

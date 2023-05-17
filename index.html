@@ -10,28 +10,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@100;500;700;900&family=PT+Serif:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="CSS/normalice.css">
     <link rel="stylesheet" href="CSS/style.css">
-
+    <link rel="stylesheet" href="CSS/normalice.css">
 </head>
 
 <body>
-    <header>
-        <nav class="header">
-            <a href="#" class="header__link">Inicio</a>
+    <header class="header">
+        <img src="img/logo-copia.svg" alt="logo-de-JDF-inmuebles" class="header__logo">
+        <nav class="header_nav">
+            <a href="index.html" class="header__link">Inicio</a>
             <a href="ventas.html" class="header__link">ventas</a>
-            <img src="img/logo-copia.svg" alt="logo-de-JDF-inmuebles" class="header__logo">
             <a href="alquileres.html" class="header__link">alquileres</a>
             <a href="contacto.html" class="header__link">contacto</a>
         </nav>
     </header>
     <main>
         <section class="presentacion">
-            <h1 class="presentacion__titulo">JDF </h1>
-            <p class="presentacion__titulo-contiguo">inmuebles</p>
-            <p class="presentacion__slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ullam!
-                Dicta tempora veniam blanditiis
-                harum sequi natus et sint, </p>
+            <div class="presentacion__textos">
+                <h1 class="presentacion__titulo">JDF <span>Inmuebles</span> </h1>
+                <p class="presentacion__matricula">Mat 0000</p>
+            </div>
         </section>
         <section class="propiedadesPopulares">
             <h2 class="propiedadesPopulares__titulo">propiedades recientes</h2>
@@ -44,6 +42,7 @@
                         adipisicing elit. Veritatis, omnis dolor! Rerum illo commodi </p>
                     <a href="#">Ver Más</a>
                 </div>
+                <!-- una propiedad  -->
                 <div class="ropiedadesPopulares__targeta ">
                     <h3 class="propiedadesPopulares__NombreDePropiedad">nombre de proiedad</h3>
                     <img src="Ventas/img/Propiedad1/exterior.jpg" alt="imagen-de-una propiedad"
@@ -54,42 +53,65 @@
                 </div>
             </div>
         </section>
-        <section class="conocenos">
-            <h2 class="conocenos_titulo">conocenos</h2>
-            <p class="conocenos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore natus
-                numquam perspiciatis et ullam ipsam
-                officiis doloribus quasi rerum.
-                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempore molestiae doloremque
-                error non eveniet voluptas sit nobis debitis veritatis tenetur laboriosam deserunt excepturi ipsum
-                perspiciatis minima molestias, amet itaque?
-            </p>
+        <section class="mapaDePropiedades">
+            <div class="mapaDePropiedades-alquileres">
+                <h3 class="mapaDePropiedades-titulo">Propiedades en alquileres</h3>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1bUvVCfh6Y06XWmHei_pdAh3UzbkiluQ&ehbc=2E312F"
+                    width="700" height="400"></iframe>
+            </div>
+            <div class="mapaDePropiedades-ventas">
+                <h3 class="mapaDePropiedades-titulo">Propiedades en Venta</h3>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1EB_yc62h5y6p0fLp4jPw7yE9efNmCR0&ehbc=2E312F"
+                    width="700" height="400"></iframe>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__navegacion">
-            <a class="footer__navegacion-links" href="#inicio">inicio</a>
-            <a class="footer__navegacion-links" href="#">alquieleres</a>
-            <a class="footer__navegacion-links" href="#">Ventas</a>
-            <a class="footer__navegacion-links" href="#">contacto</a>
-        </div>
-        <div class="footer__redes">
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-        <div class="footer__contactos">
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-        <div class="footer__ubicacion">
-            <!-- <iframe src="#" frameborder="0">
-            </iframe> -->
-        </div>
+        <section class="footer-nav">
+            <div class="footer__navegacion">
+                <a class="footer__navegacion-links" href="#inicio">inicio</a>
+                <a class="footer__navegacion-links" href="#">alquileres</a>
+                <a class="footer__navegacion-links" href="#">Ventas</a>
+                <a class="footer__navegacion-links" href="#">contacto</a>
+            </div>
+        </section>
+
+        <section class="footer__informacion">
+            <div class="footer__redes">
+                <h2 class="footer__infomarcion-titulo">Encontranos en:</h2>
+                <div class="footer__redes__links">
+                    <a href="#" class="Redes__sociales-facebook footer__links-info">Facebook</a>
+                    <a href="#" class="redes__sociales-instagram footer__links-info">Instagram</a>
+                </div>
+            </div>
+            <div class="footer__contacto">
+                <h2 class="footer__infomarcion-titulo">Contactanos en:</h2>
+                <div class="footer__contactos-liks">
+                    <a href="#" class="footer__contacto-cel footer__links-info">WhatsApp</a>
+                    <a href="#" class="footer__contacto-tel footer__links-info">4691201</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer__ubicacion">
+            <h2 class="footer__ubicacion-title">Ubicaicon de la compañia</h2>
+            <div class="footer__ubicacion-mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.4479161801831!2d-60.698673930361764!3d-31.612167956279848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5075ffdbbaf65%3A0x2d1ad7855d3134fc!2sSan%20Jer%C3%B3nimo%206031%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1684075271325!5m2!1ses-419!2sar"
+                    width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
     </footer>
     <div class="creador">
         <p>Web diseñada por Canario Alan</p>
-        <a href="#"><img src="#" alt="logo de github"></a>
-        <a href="#"><img src="#" alt="logo de linkedin"></a>
-        <a href="#"><img src="#" alt="logo de Gmail"></a>
+        <div>
+            <a href="#"><img src="#" alt="logo de github"></a>
+            <a href="#"><img src="#" alt="logo de linkedin"></a>
+            <a href="#"><img src="#" alt="logo de Gmail"></a>
+        </div>
+
     </div>
     <script src="scrip.js"></script>
 </body>
