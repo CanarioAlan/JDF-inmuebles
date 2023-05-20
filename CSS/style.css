@@ -120,44 +120,74 @@ main {
   font-size: 3rem;
   color: var(--Cceleste);
   text-transform: uppercase;
-}
-.ropiedadesPopulares__targeta {
-  width: 20rem;
-  height: 30rem;
-  border: solid 1px var(--CNegro);
-  border-radius: 1rem;
-  text-align: center;
-}
-.propiedadesPopulares__NombreDePropiedad {
-  font-family: var(--fgeneral2);
-  font-weight: 100;
-  background-color: var(--Cgris);
   padding: 1rem;
-  color: var(--Cblanco);
+}
+.casa {
+  width: 200px;
+  height: 250px;
+  border: solid black 1px;
+  border-radius: 1rem;
+  background-color: var(--Cblanco);
+}
+.casa__nombre {
+  padding: 0.5rem;
+  margin-bottom: 5px;
+  background-color: var(--Cgris);
   border-radius: 1rem 1rem 0 0;
 }
-.propiedadesPopulares__ImgDePropiedad {
-  max-width: 20rem;
-  margin: 0 0 5px 0;
+.casa__slider {
+  display: grid;
+  grid-template-columns: 25px 1fr 30px;
+  align-items: center;
 }
-.propiedadesPopulares__DescripcionDePropiedad {
-  font-weight: 100;
-  text-align: start;
-  margin-bottom: 5px;
+.casa__imagenes {
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  pointer-events: none;
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  transition: opacity 1.5s;
+}
+.casa__img {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  max-width: 150px;
+  max-height: 150px;
+  opacity: 0;
+}
+.casa__img--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+.casa__arrow {
+  cursor: pointer;
+  padding: 30px 0;
+  background-color: var(--Cblanco);
+}
+.casa__arrow:nth-of-type(2) {
+  justify-self: end;
+}
+.casa__informacion {
+  text-transform: capitalize;
+  font-family: var(--fgeneral2);
   padding: 1rem;
 }
-.ropiedadesPopulares__targeta a {
-  text-decoration: none;
-  bottom: 0;
-  right: 40%;
-  font-size: 1.5rem;
-  padding: 1.5rem;
-  color: var(--CNegro);
+.casa__informacion-ubi {
+  padding: 1.5px;
 }
-.ropiedadesPopulares__targeta a:hover {
+.casa__mas-info a {
+  padding: 1rem;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--CNegro);
+  display: block;
+}
+.casa__mas-info:hover {
   background-color: var(--Cgris);
-  border-radius: 1rem;
-  color: var(--Cblanco);
+  border-radius: 50px;
 }
 /*mapas de propiedades*/
 .mapaDePropiedades {
@@ -250,6 +280,8 @@ main {
   text-align: end;
   background-repeat: no-repeat;
   background-size: 3.7rem;
+  font-family: var(--Fgeneral);
+  font-size: 1.5rem;
 }
 .Redes__sociales-facebook {
   background-image: url(../img/logo-faceboock.png);
@@ -272,4 +304,11 @@ main {
 .creador {
   display: flex;
   justify-content: space-evenly;
+}
+.creador p {
+  font-family: var(--Fsubtitulo);
+  font-weight: 400;
+}
+.creador img {
+  width: 2rem;
 }

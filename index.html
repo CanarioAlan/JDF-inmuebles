@@ -32,26 +32,32 @@
             </div>
         </section>
         <section class="propiedadesPopulares">
-            <h2 class="propiedadesPopulares__titulo">propiedades recientes</h2>
+            <h2>propiedades recientes</h2>
             <div class="propiedadesPopulares__targetas">
-                <div class="ropiedadesPopulares__targeta ">
-                    <h3 class="propiedadesPopulares__NombreDePropiedad">nombre de proiedad</h3>
-                    <img src="Ventas/img/Propiedad1/exterior.jpg" alt="imagen-de-una propiedad"
-                        class="propiedadesPopulares__ImgDePropiedad">
-                    <p class="propiedadesPopulares__DescripcionDePropiedad">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Veritatis, omnis dolor! Rerum illo commodi </p>
-                    <a href="#">Ver Más</a>
-                </div>
-                <!-- una propiedad  -->
-                <div class="ropiedadesPopulares__targeta ">
-                    <h3 class="propiedadesPopulares__NombreDePropiedad">nombre de proiedad</h3>
-                    <img src="Ventas/img/Propiedad1/exterior.jpg" alt="imagen-de-una propiedad"
-                        class="propiedadesPopulares__ImgDePropiedad">
-                    <p class="propiedadesPopulares__DescripcionDePropiedad">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Veritatis, omnis dolor! Rerum illo commodi </p>
-                    <a href="#">Ver Más</a>
+                <div class="casa">
+                    <h3 class="casa__nombre">nombre de la pripiedad</h3>
+                    <div class="casa__slider casa__container">
+                        <img src="img/flecha-izq.svg" class="casa__arrow" id="before">
+                        <div class="casa__imagenes">
+                            <img src="Ventas/img/Propiedad1/exterior.jpg" alt="" class="casa__img casa__img--show"
+                                data-id="1">
+                            <img src="Ventas/img/Propiedad1/habitacion.jpg" alt="" class="casa__img" data-id="2">
+                            <img src="Ventas/img/Propiedad1/mesa.jpg" alt="" class="casa__img" data-id="3">
+                        </div>
+                        <img src="img/flecha-der.svg" class="casa__arrow" id="after">
+                    </div>
+                    <div class="casa__informacion">
+                        <p class="casa__informacion-ubi"><b>provincia:</b> santa fe</p>
+                        <p class="casa__informacion-ubi"><b>localidad:</b> capital</p>
+                        <p class="casa__informacion-ubi"><b>categoria:</b> casa</p>
+                        <div class="casa__mas-info">
+                            <a href="#">mas info</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- una propiedad  -->
+
         </section>
         <section class="mapaDePropiedades">
             <div class="mapaDePropiedades-alquileres">
@@ -106,12 +112,11 @@
     </footer>
     <div class="creador">
         <p>Web diseñada por Canario Alan</p>
-        <div>
-            <a href="#"><img src="#" alt="logo de github"></a>
-            <a href="#"><img src="#" alt="logo de linkedin"></a>
-            <a href="#"><img src="#" alt="logo de Gmail"></a>
+        <div class="creador__links">
+            <a href="#"><img src="img/github-logo.png" alt="logo de github"></a>
+            <a href="#"><img src="img/linkedin-logo.png" alt="logo de linkedin"></a>
+            <a href="#"><img src="img/gmail-logo.png" alt="logo de Gmail"></a>
         </div>
-
     </div>
     <script src="scrip.js"></script>
 </body>
