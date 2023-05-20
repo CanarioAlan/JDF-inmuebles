@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventas</title>
     <link rel="stylesheet" href="CSS/normalice.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/venta-alquiler.css">
 </head>
@@ -48,42 +49,49 @@
         <section class="casas">
             <!-- propiedad venta 1 -->
             <div class="casa">
-                <div class="casa__slider casa__container">
-                    <img src="img/flecha-izq.svg" class="casa__arrow" id="before">
-                    <div class="casa__imagenes">
-                        <img src="Ventas/img/Propiedad1/exterior.jpg" alt="" class="casa__img casa__img--show"
-                            data-id="1">
-                        <img src="Ventas/img/Propiedad1/habitacion.jpg" alt="" class="casa__img" data-id="2">
-                        <img src="Ventas/img/Propiedad1/mesa.jpg" alt="" class="casa__img" data-id="3">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <img src="Ventas/img/Propiedad1/exterior.jpg" class="swiper-slide">
+                        <img src="Ventas/img/Propiedad1/habitacion.jpg" class="swiper-slide">
+                        <img src="Ventas/img/Propiedad1/mesa.jpg" class="swiper-slide">
                     </div>
-                    <img src="img/flecha-der.svg" class="casa__arrow" id="after">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev "></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                <h2 class="casa__nombre">nombre de la propiedad</h2>
                 <div class="casa__informacion">
-                    <p class="casa__informacion-prov"><b>Provincia:</b>Santa fe</p>
-                    <p class="casa__informacion-local"><b>Localidad:</b>Capital</p>
-                    <p class="casa__informacion-categ"><b>Categoria:</b>Casa</p>
+                    <h3 class="casa__titulo">nombre de la propiedad</h3>
+                    <div class="casa__datos">
+                        <p><b>provincia:</b>santa fe</p>
+                        <p><b>localidad:</b>capital</p>
+                        <p class="casa__datos-categ"><b>categoria:</b>casa</p>
+                    </div>
+                    <a href="#" class="casa__verMas">ver mas</a>
                 </div>
-                <a href="#" class="casa__verMas">Ver mas</a>
             </div>
+            <!-- propiedad venta 2 -->
             <div class="casa">
-                <div class="casa__slider casa__container">
-                    <img src="img/flecha-izq.svg" class="casa__arrow" id="before">
-                    <div class="casa__imagenes">
-                        <img src="Ventas/img/Propiedad1/exterior.jpg" alt="" class="casa__img casa__img--show"
-                            data-id="1">
-                        <img src="Ventas/img/Propiedad1/habitacion.jpg" alt="" class="casa__img" data-id="2">
-                        <img src="Ventas/img/Propiedad1/mesa.jpg" alt="" class="casa__img" data-id="3">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <img src="Ventas/img/Propiedad1/exterior.jpg" class="swiper-slide">
+                        <img src="Ventas/img/Propiedad1/habitacion.jpg" class="swiper-slide">
+                        <img src="Ventas/img/Propiedad1/mesa.jpg" class="swiper-slide">
                     </div>
-                    <img src="img/flecha-der.svg" class="casa__arrow" id="after">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                <h2 class="casa__nombre">nombre de la propiedad</h2>
                 <div class="casa__informacion">
-                    <p class="casa__informacion-prov"><b>Provincia:</b>Santa fe</p>
-                    <p class="casa__informacion-local"><b>Localidad:</b>Capital</p>
-                    <p class="casa__informacion-categ"><b>Categoria:</b>Casa</p>
+                    <h3 class="casa__titulo">nombre de la propiedad</h3>
+                    <div class="casa__datos">
+                        <p><b>provincia</b>santa fe</p>
+                        <p><b>localidad</b>capital</p>
+                        <p class="casa__datos-categ"><b>categoria</b>casa</p>
+                    </div>
+                    <a href="#">ver mas</a>
                 </div>
-                <a href="#" class="casa__verMas">Ver mas</a>
             </div>
         </section>
         <!-- cierre de propiedades -->
@@ -137,7 +145,8 @@
             <a href="#"><img src="img/gmail-logo.png" alt="logo de Gmail"></a>
         </div>
     </div>
-    <script src="scrip.js"></script>
+    <!-- <script src="scrip.js"></script> -->
+    <script type="module" src="swipe.js"></script>
 </body>
 
 </html>
