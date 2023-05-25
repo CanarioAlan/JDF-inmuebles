@@ -1,0 +1,83 @@
+:root {
+  /* fuentes */
+  --Ftitulo: "trajanPro", serif;
+  --Fsubtitulo: "DM Serif Text", serif;
+  --Fgeneral: "Montserrat", sans-serif;
+  --fgeneral2: "PT Serif", serif;
+  /* colores  */
+  --CGrisClaro: #ebe8e8;
+  --Cblanco: #f5f5f7;
+  --Cgris: #b7bbc7;
+  --Cceleste: #20b9fc;
+  --Cazul: #5632fa;
+  --CNegro: #000000;
+}
+
+main {
+  text-align: center;
+  margin: 0 auto;
+}
+/* propiedades */
+.propiedad {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+.propiedad__titulo {
+  text-transform: uppercase;
+  font-family: var(--Fsubtitulo);
+  margin: 0;
+  padding: 2rem;
+}
+.swiper-wrapper {
+  width: 700px;
+}
+.swiper {
+  border: 2px solid var(--Cazul);
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  padding: 1.5px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 1);
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.3);
+}
+.verMas-img {
+  background-color: var(--Cgris);
+}
+.verMas-img a {
+  text-decoration: none;
+  color: var(--Cblanco);
+}
+.verMas-img a:hover {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  color: var(--CNegro);
+}
+/* descripcion  */
+.propiedad__descripcion {
+  width: 1000px;
+  padding: 2rem;
+  border: 1px solid var(--Cazul);
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.propiedad__titulo-descripcion {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  border-bottom: 1px solid var(--Cazul);
+}
+.propiedad__texto {
+  font-family: var(--Fgeneral);
+  padding: 1rem;
+}
+.propiedad__map {
+  width: 900px;
+  height: 370px;
+}

@@ -82,11 +82,11 @@ main {
   width: 100%;
   height: calc(100vh - 112.44px);
   background-image: url(../img/banner3.jpg);
-  background-position-y: -50rem;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 .presentacion__textos {
-  width: 60rem;
+  width: 600px;
   position: relative;
   top: 100px;
   left: 100px;

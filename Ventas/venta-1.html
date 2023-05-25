@@ -10,20 +10,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@100;500;700;900&family=PT+Serif:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../CSS/normalice.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../CSS/propiedades.css">
+    <link rel="stylesheet" href="../CSS/mediasqries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
     <header class="header">
         <img src="../img/logo-copia.svg" alt="logo-de-JDF-inmuebles" class="header__logo">
         <nav class="header_nav">
-            <a href="index.html" class="header__link">Inicio</a>
-            <a href="ventas.html" class="header__link">ventas</a>
-            <a href="alquileres.html" class="header__link">alquileres</a>
-            <a href="contacto.html" class="header__link">contacto</a>
+            <a href="../index.html" class="header__link">Inicio</a>
+            <a href="../ventas.html" class="header__link">ventas</a>
+            <a href="../alquileres.html" class="header__link">alquileres</a>
+            <a href="../contacto.html" class="header__link">contacto</a>
         </nav>
     </header>
     <main>
@@ -40,6 +43,9 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-scrollbar"></div>
             </div>
+            <div class="verMas-img">
+                <a href="#">Ver mas</a>
+            </div>
         </section>
         <section class="propiedad__descripcion">
             <h2 class="propiedad__titulo-descripcion ">descripcion</h2>
@@ -51,7 +57,11 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108744.51677153894!2d-60.686593099999975!3d-31.599166199999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b507444ae5d169%3A0x47df047330a00d49!2sRivadavia%207855%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1684624774386!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" class="propiedad__map"></iframe>
+            <div>
+                <a href="#">WhatsApp</a>
+                <a href="#">Llamar</a>
+            </div>
         </section>
     </main>
     <footer class="footer">

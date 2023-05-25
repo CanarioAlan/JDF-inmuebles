@@ -1,0 +1,198 @@
+:root {
+  /* fuentes */
+  --Ftitulo: "trajanPro", serif;
+  --Fsubtitulo: "DM Serif Text", serif;
+  --Fgeneral: "Montserrat", sans-serif;
+  --fgeneral2: "PT Serif", serif;
+  /* colores  */
+  --CGrisClaro: #ebe8e8;
+  --Cblanco: #f5f5f7;
+  --Cgris: #b7bbc7;
+  --Cceleste: #20b9fc;
+  --Cazul: #5632fa;
+  --CNegro: #000000;
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /* index  */
+  .presentacion {
+    background-position: bottom center;
+  }
+  .mapaDePropiedades {
+    display: block;
+    justify-content: space-evenly;
+  }
+  /* alquileres y venta  */
+  .casa {
+    width: 300px;
+    height: 400px;
+  }
+  .casa__titulo {
+    font-size: 1.9rem;
+  }
+  .swiper-wrapper {
+    width: 300px;
+  }
+  .casa__datos {
+    font-size: 1.5rem;
+  }
+  /* propiedad */
+  .propiedad {
+    width: 700px;
+  }
+  .propiedad .swiper-wrapper {
+    height: 400px;
+  }
+  .propiedad__texto {
+    font-size: 2rem;
+  }
+  .propiedad__descripcion {
+    width: 800px;
+  }
+  .propiedad__map {
+    width: 750px;
+    height: 370px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* index  */
+  .presentacion {
+    background-position: center center;
+  }
+  .mapaDePropiedades {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .mapaDePropiedades iframe {
+    width: 500px;
+    height: 300px;
+  }
+  .presentacion__textos {
+    width: 500px;
+  }
+  .presentacion__titulo {
+    font-size: 8rem;
+  }
+  .footer__infomarcion-titulo {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  /* alquileres y venta  */
+  .casas {
+    display: flex;
+  }
+  .casa {
+    width: 300px;
+    height: 450px;
+  }
+  .swiper-wrapper {
+    width: 300px;
+  }
+  /* propiedad */
+  .propiedad {
+    width: 700px;
+  }
+  .propiedad .swiper-wrapper {
+    height: 400px;
+  }
+  .propiedad__texto {
+    font-size: 2rem;
+  }
+  .propiedad__descripcion {
+    width: 600px;
+  }
+  .propiedad__map {
+    width: 600px;
+    height: 370px;
+  }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+  .header__link {
+    font-size: 1.5rem;
+  }
+  .presentacion {
+    background-position: center center;
+    background-size: cover;
+  }
+  .presentacion__textos {
+    width: 300px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+  }
+  .presentacion__titulo {
+    font-size: 5rem;
+  }
+  .presentacion__titulo span {
+    font-size: 3rem;
+  }
+  .mapaDePropiedades {
+    display: block;
+  }
+  .mapaDePropiedades iframe {
+    width: 300px;
+    height: 450px;
+  }
+  .footer {
+    display: block;
+  }
+  .footer__redes__links,
+  .footer__contactos-liks {
+    height: 200px;
+    justify-content: space-evenly;
+  }
+  .footer__navegacion-links {
+    font-size: 1.5rem;
+  }
+  .footer__infomarcion-titulo {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  /* alquileres y venta  */
+  .filtro {
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filtro__label {
+    font-size: 1.5rem;
+  }
+  .casa {
+    width: 300px;
+    height: 400px;
+    margin: 10px 0;
+  }
+  .casa__titulo {
+    font-size: 1.9rem;
+  }
+  .swiper-wrapper {
+    width: 300px;
+  }
+  .casa__datos {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .casa__datos p {
+    margin: 10px;
+  }
+  /* propiedades  */
+  .propiedad {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto 2rem;
+  }
+  .propiedad__descripcion {
+    width: 300px;
+    padding: 2rem;
+    border: 1px solid var(--Cazul);
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .propiedad__map {
+    width: 300px;
+    height: 370px;
+  }
+}
