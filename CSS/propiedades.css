@@ -28,15 +28,16 @@ main {
   font-family: var(--Fsubtitulo);
   margin: 0;
   padding: 2rem;
+  text-shadow: 1px 1px 2px var(--CNegro);
 }
 .swiper-wrapper {
   width: 700px;
 }
 .swiper {
   border: 2px solid var(--Cazul);
-  -webkit-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 0px 12px 0px rgba(0, 0, 0, 0.75);
   padding: 1.5px;
 }
 .swiper-button-prev,
@@ -49,16 +50,21 @@ main {
   transform: scale(1.3);
 }
 .verMas-img {
+  padding: 1rem;
   background-color: var(--Cgris);
+  border-radius: 0 0 10px 10px;
 }
 .verMas-img a {
   text-decoration: none;
   color: var(--Cblanco);
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px var(--CNegro);
 }
 .verMas-img a:hover {
   text-transform: uppercase;
   padding: 1rem 0;
   color: var(--CNegro);
+  text-shadow: 1px 1px 2px var(--CNegro);
 }
 /* descripcion  */
 .propiedad__descripcion {
@@ -80,4 +86,33 @@ main {
 .propiedad__map {
   width: 900px;
   height: 370px;
+}
+.contacto__propiedades {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contacto__wsp,
+.contacto__tel {
+  text-decoration: none;
+  font-family: var(--Fsubtitulo);
+  text-transform: uppercase;
+  color: var(--CNegro);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 10rem;
+  text-align: end;
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  background-position: left;
+  font-family: var(--Fgeneral);
+  font-size: 1.5rem;
+}
+.contacto__wsp {
+  background-image: url(../img/logo-whatsapp.png);
+}
+.contacto__tel {
+  background-image: url(../img/logo-phone.png);
 }

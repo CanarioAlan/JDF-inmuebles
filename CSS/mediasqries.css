@@ -118,10 +118,13 @@
     background-size: cover;
   }
   .presentacion__textos {
-    width: 300px;
-    position: relative;
-    top: 100px;
-    left: 50px;
+    width: 200px;
+    height: 200px;
+    top: 60px;
+    left: 60px;
+    background-size: 40rem;
+    background-size: 20rem;
+    background-color: #20b9fc;
   }
   .presentacion__titulo {
     font-size: 5rem;

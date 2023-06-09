@@ -39,6 +39,7 @@ main {
 }
 .header__logo {
   width: 20rem;
+  padding: 0.5rem;
 }
 .header_nav {
   display: flex;
@@ -84,26 +85,20 @@ main {
   background-image: url(../img/banner3.jpg);
   background-position: bottom left;
   background-repeat: no-repeat;
+  filter: grayscale(40%);
 }
 .presentacion__textos {
-  width: 600px;
+  width: 800px;
+  height: 400px;
   position: relative;
   top: 100px;
   left: 100px;
+  background-image: url(../img/logo-con-la-matricula.png);
+  background-repeat: no-repeat;
+  background-size: 40rem;
+  background-position: center center;
 }
-.presentacion__titulo {
-  font-size: 12rem;
-  margin: 0;
-  color: var(--Cazul);
-  font-family: var(--Ftitulo);
-}
-.presentacion__titulo span {
-  font-size: 5.5rem;
-}
-.presentacion__matricula {
-  color: red;
-  text-align: end;
-}
+
 /*propiedades populares */
 
 /*mapas de propiedades*/
