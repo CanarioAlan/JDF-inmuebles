@@ -73,6 +73,7 @@ main {
 }
 .swiper-wrapper {
   width: 400px;
+  height: 200px;
 }
 .swiper-button-prev,
 .swiper-button-next {
