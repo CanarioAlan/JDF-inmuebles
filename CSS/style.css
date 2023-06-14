@@ -82,7 +82,7 @@ main {
 .presentacion {
   width: 100%;
   height: calc(100vh - 112.44px);
-  background-image: url(../img/banner3.jpg);
+  background-image: url(../img/banner3.webp);
   background-position: bottom left;
   background-repeat: no-repeat;
   filter: grayscale(40%);
@@ -93,7 +93,7 @@ main {
   position: relative;
   top: 100px;
   left: 100px;
-  background-image: url(../img/logo-con-la-matricula.png);
+  background-image: url(../img/logo-con-la-matricula.webp);
   background-repeat: no-repeat;
   background-size: 40rem;
   background-position: center center;
@@ -196,13 +196,13 @@ main {
   font-size: 1.5rem;
 }
 .Redes__sociales-facebook {
-  background-image: url(../img/logo-faceboock.png);
+  background-image: url(../img/logo-faceboock.webp);
 }
 .redes__sociales-instagram {
-  background-image: url(../img/logo-instagram.png);
+  background-image: url(../img/logo-instagram.webp);
 }
 .footer__contacto-cel {
-  background-image: url(../img/logo-whatsapp.png);
+  background-image: url(../img/logo-whatsapp.webp);
 }
 .footer__contacto-tel {
   background-image: url(../img/logo-phone.png);

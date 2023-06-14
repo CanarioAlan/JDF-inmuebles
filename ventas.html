@@ -26,7 +26,15 @@
     </header>
     <main>
         <div class="filtro">
-            <input type="radio" name="filtro" id="todo" checked="yes">
+            <button class="btn-filtro" onclick='filtrosPropie("todo")'>todo</button>
+            <button class="btn-filtro" onclick='filtrosPropie("casa")'>casa</button>
+            <button class="btn-filtro" onclick="filtrosPropie('departamento')">departamento</button>
+            <button class="btn-filtro" onclick="filtrosPropie('quinta')">quinta</button>
+            <button class="btn-filtro" onclick="filtrosPropie('cocheras')">cochera</button>
+            <button class="btn-filtro" onclick="filtrosPropie('terrenos')">terrenos</button>
+            <button class="btn-filtro" onclick="filtrosPropie('otros')">otros</button>
+
+            <!-- <input type="radio" name="filtro" id="todo" checked>
             <label for="todo" class="filtro__todo filtro__label">Todo</label>
 
             <input type="radio" name="filtro" id="casa">
@@ -45,7 +53,7 @@
             <label for="otros" class="filtro__otros filtro__label">Otros</label>
 
             <input type="radio" name="filtro" id="terreno">
-            <label for="terreno" class="filtro__terrenos filtro__label">Terrenos</label>
+            <label for="terreno" class="filtro__terrenos filtro__label">Terrenos</label> -->
         </div>
         <section class="casas">
             <!-- propiedad venta 4 -->
@@ -118,7 +126,7 @@
                 </div>
             </div>
             <!-- propiedad venta 1 -->
-            <div class="casa">
+            <div class="casa departamento">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <img src="Ventas/img/V1/img1.jpg" class="swiper-slide">
@@ -133,9 +141,9 @@
                 <div class="casa__informacion">
                     <h3 class="casa__titulo">San Martin 6800</h3>
                     <div class="casa__datos">
-                        <p><b>provincia</b>santa fe</p>
-                        <p><b>localidad</b>capital</p>
-                        <p class="casa__datos-categ"><b>categoria</b>departamento</p>
+                        <p><b>provincia:</b>santa fe</p>
+                        <p><b>localidad:</b>capital</p>
+                        <p class="casa__datos-categ"><b>categoria:</b>departamento</p>
                     </div>
                     <a href="Ventas/V-1.html" class="casa__verMas">ver mas</a>
                 </div>

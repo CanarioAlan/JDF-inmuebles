@@ -6,20 +6,30 @@ const swiper = new Swiper(".swiper", {
   autoplay: {
     deley: 2000,
   },
-
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
   },
-
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
   //   And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
   },
 });
+function filtrosPropie(value) {
+  let buttons = document.querySelectorAll(".btn-filtro");
+  buttons.forEach((button) => {
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add("activado");
+    } else {
+      button.classList.remove("activado");
+    }
+  });
+}
+window.onload = () => {
+  filtrosPropie("todo");
+};
