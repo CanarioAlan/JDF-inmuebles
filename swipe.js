@@ -20,16 +20,3 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
-function filtrosPropie(value) {
-  let buttons = document.querySelectorAll(".btn-filtro");
-  buttons.forEach((button) => {
-    if (value.toUpperCase() == button.innerText.toUpperCase()) {
-      button.classList.add("activado");
-    } else {
-      button.classList.remove("activado");
-    }
-  });
-}
-window.onload = () => {
-  filtrosPropie("todo");
-};

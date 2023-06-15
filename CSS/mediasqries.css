@@ -12,8 +12,11 @@
   --Cazul: #5632fa;
   --CNegro: #000000;
 }
-@media (min-width: 1024px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   /* index  */
+  .header__link {
+    font-size: 2rem;
+  }
   .presentacion {
     background-position: bottom center;
   }
@@ -25,12 +28,16 @@
   .casa {
     width: 300px;
     height: 400px;
+    margin: 5px 0;
   }
+
   .casa__titulo {
     font-size: 1.9rem;
+    height: 2.5rem;
   }
   .swiper-wrapper {
     width: 300px;
+    height: 180px;
   }
   .casa__datos {
     font-size: 1.5rem;
@@ -53,8 +60,19 @@
     height: 370px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 481px) and (max-width: 768px) {
   /* index  */
+  .header {
+    display: block;
+    text-align: center;
+  }
+  .header__link {
+    font-size: 1.5rem;
+  }
+  .presentacion {
+    background-position: center center;
+    background-size: cover;
+  }
   .presentacion {
     background-position: center center;
   }
@@ -77,15 +95,27 @@
     padding: 1rem;
   }
   /* alquileres y venta  */
+  .filtro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
   .casas {
     display: flex;
   }
   .casa {
     width: 300px;
     height: 450px;
+    margin: 5px 0;
   }
   .swiper-wrapper {
     width: 300px;
+  }
+  .casa__datos {
+    display: block;
+  }
+  .casa__datos p {
+    margin: 10px;
   }
   /* propiedad */
   .propiedad {
@@ -104,8 +134,29 @@
     width: 600px;
     height: 370px;
   }
+  .footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__infomarcion {
+    width: 90%;
+  }
+  .footer__infomarcion-titulo {
+    font-size: 2.7rem;
+  }
+  .footer__redes__links {
+    width: 100%;
+    display: block;
+  }
+  .footer__links-info {
+    padding: 1rem 5rem;
+  }
+  .footer__ubicacion-mapa iframe {
+    width: 90%;
+  }
 }
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .header {
     display: block;
     text-align: center;
@@ -144,27 +195,28 @@
   }
   .footer__redes__links,
   .footer__contactos-liks {
-    height: 200px;
+    height: 150px;
     justify-content: space-evenly;
   }
   .footer__navegacion-links {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .footer__infomarcion-titulo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 1rem;
+  }
+  .footer__ubicacion-mapa iframe {
+    width: 90%;
   }
   /* alquileres y venta  */
   .filtro {
-    width: 300px;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center;
-  }
-  .filtro__label {
-    font-size: 1.5rem;
+    width: 90%;
+    margin: 0;
   }
   .casa {
-    width: 300px;
+    width: 250px;
     height: 400px;
     margin: 10px 0;
   }
@@ -172,11 +224,12 @@
     font-size: 1.9rem;
   }
   .swiper-wrapper {
-    width: 300px;
+    width: 250px;
+    height: 170px;
   }
   .casa__datos {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .casa__datos p {
     margin: 10px;

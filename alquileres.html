@@ -26,32 +26,19 @@
     </header>
     <main>
         <div class="filtro">
-            <input type="radio" name="filtro" id="todo" checked="yes">
-            <label for="todo" class="filtro__todo filtro__label">Todo</label>
-
-            <input type="radio" name="filtro" id="casa">
-            <label for="casa" class="filtro__casas filtro__label">Casas</label>
-
-            <input type="radio" name="filtro" id="departamento">
-            <label for="departamento" class="filtro__departamento filtro__label">Departamento</label>
-
-            <input type="radio" name="filtro" id="quinta">
-            <label for="quinta" class="filtro__quinta filtro__label">Quinta</label>
-
-            <input type="radio" name="filtro" id="garage">
-            <label for="garage" class="filtro__cochera filtro__label">Cocheras</label>
-
-            <input type="radio" name="filtro" id="otros">
-            <label for="otros" class="filtro__otros filtro__label">Otros</label>
-
-            <input type="radio" name="filtro" id="terreno">
-            <label for="terreno" class="filtro__terrenos filtro__label">Terrenos</label>
+            <button class="btn-filtro" categoria="todo">todo</button>
+            <button class="btn-filtro" categoria="casa">casa</button>
+            <button class="btn-filtro" categoria="departamento">departamento</button>
+            <button class="btn-filtro" categoria="quinta">quinta</button>
+            <button class="btn-filtro" categoria="cochera">cochera</button>
+            <button class="btn-filtro" categoria="terrenos">terrenos</button>
+            <button class="btn-filtro" categoria="otros">otros</button>
         </div>
         <section class="casas">
             <!-- propiedad venta 2 -->
 
             <!-- propiedad venta 1 -->
-            <div class="casa">
+            <div class="casa" categoria="casa">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <img src="Alquiler/img/A1/img1.jpg" class="swiper-slide">
@@ -66,9 +53,9 @@
                 <div class="casa__informacion">
                     <h3 class="casa__titulo">Pio Pandolfo 9000</h3>
                     <div class="casa__datos">
-                        <p><b>provincia</b>santa fe</p>
-                        <p><b>localidad</b>capital</p>
-                        <p class="casa__datos-categ"><b>categoria</b>casa</p>
+                        <p><b>provincia: </b>santa fe</p>
+                        <p><b>localidad: </b>capital</p>
+                        <p class="casa__datos-categ"><b>categoria: </b>casa</p>
                     </div>
                     <a href="Alquiler/A-1.html" class="casa__verMas">ver mas</a>
                 </div>
@@ -97,20 +84,34 @@
                         class="redes__sociales-instagram footer__links-info">Instagram</a>
                 </div>
             </div>
-            <div class="footer__contacto">
+            <!-- <div class="footer__contacto">
+
                 <h2 class="footer__infomarcion-titulo">Contactanos en:</h2>
                 <div class="footer__contactos-liks">
                     <a href="#" class="footer__contacto-cel footer__links-info">WhatsApp</a>
                     <a href="#" class="footer__contacto-tel footer__links-info">4691201</a>
                 </div>
-            </div>
+            </div> -->
         </section>
-
+        <section class="ftr__contacto">
+            <h2 class="ftr__contacto-titulo">contactanos</h2>
+            <form class="ftr__form">
+                <input class="ftr__form-item" type="text" name="name" id="nombre" placeholder=" Ingrese su nombre"
+                    required>
+                <input class="ftr__form-item" type="text" name=" apellido" id=" apellido"
+                    placeholder=" Ingrese su apellido" required>
+                <input class="ftr__form-item" type="mail" name="mail" id="" placeholder=" Ingrese su email" required>
+                <input class="ftr__form-item" type="phone" name="phone" id="" placeholder=" Ingrese su telefono"
+                    required>
+                <textarea name="message" placeholder=" escriba su mensaje aqui" minlength="10"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
         <section class="footer__ubicacion">
             <h2 class="footer__ubicacion-title">Ubicaicon de la compañia</h2>
             <div class="footer__ubicacion-mapa">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.4479161801831!2d-60.698673930361764!3d-31.612167956279848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5075ffdbbaf65%3A0x2d1ad7855d3134fc!2sSan%20Jer%C3%B3nimo%206031%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1684075271325!5m2!1ses-419!2sar"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.785530799882!2d-60.70065412352229!3d-31.61233600575293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5075ffdbbaf65%3A0xd36dc736af578df7!2sSan%20Jer%C3%B3nimo%206011%2C%20Santa%20Fe%20de%20la%20Vera%20Cruz%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1686853975947!5m2!1ses-419!2sar"
                     width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -126,6 +127,8 @@
         </div>
     </div>
     <!-- <script src="scrip.js"></script> -->
+    <script src="jquery-3.2.1.js"></script>
+    <script src="filtro.js"></script>
     <script type="module" src="swipe.js"></script>
 </body>
 

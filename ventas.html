@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/venta-alquiler.css">
     <link rel="stylesheet" href="../CSS/mediasqries.css">
+    <!-- script -->
+
 </head>
 
 <body>
@@ -26,38 +28,17 @@
     </header>
     <main>
         <div class="filtro">
-            <button class="btn-filtro" onclick='filtrosPropie("todo")'>todo</button>
-            <button class="btn-filtro" onclick='filtrosPropie("casa")'>casa</button>
-            <button class="btn-filtro" onclick="filtrosPropie('departamento')">departamento</button>
-            <button class="btn-filtro" onclick="filtrosPropie('quinta')">quinta</button>
-            <button class="btn-filtro" onclick="filtrosPropie('cocheras')">cochera</button>
-            <button class="btn-filtro" onclick="filtrosPropie('terrenos')">terrenos</button>
-            <button class="btn-filtro" onclick="filtrosPropie('otros')">otros</button>
-
-            <!-- <input type="radio" name="filtro" id="todo" checked>
-            <label for="todo" class="filtro__todo filtro__label">Todo</label>
-
-            <input type="radio" name="filtro" id="casa">
-            <label for="casa" class="filtro__casas filtro__label">Casas</label>
-
-            <input type="radio" name="filtro" id="departamento">
-            <label for="departamento" class="filtro__departamento filtro__label">Departamento</label>
-
-            <input type="radio" name="filtro" id="quinta">
-            <label for="quinta" class="filtro__quinta filtro__label">Quinta</label>
-
-            <input type="radio" name="filtro" id="garage">
-            <label for="garage" class="filtro__cochera filtro__label">Cocheras</label>
-
-            <input type="radio" name="filtro" id="otros">
-            <label for="otros" class="filtro__otros filtro__label">Otros</label>
-
-            <input type="radio" name="filtro" id="terreno">
-            <label for="terreno" class="filtro__terrenos filtro__label">Terrenos</label> -->
+            <button class="btn-filtro" categoria="todo">todo</button>
+            <button class="btn-filtro" categoria="casa">casa</button>
+            <button class="btn-filtro" categoria="departamento">departamento</button>
+            <button class="btn-filtro" categoria="quinta">quinta</button>
+            <button class="btn-filtro" categoria="cochera">cochera</button>
+            <button class="btn-filtro" categoria="terrenos">terrenos</button>
+            <button class="btn-filtro" categoria="otros">otros</button>
         </div>
         <section class="casas">
             <!-- propiedad venta 4 -->
-            <div class="casa">
+            <div class="casa" categoria="otros">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <img src="Ventas/img/V4/img1.jpg" class="swiper-slide">
@@ -80,7 +61,7 @@
                 </div>
             </div>
             <!-- propiedad venta 3 -->
-            <div class="casa">
+            <div class="casa" categoria="casa">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <img src="Ventas/img/V3/img1.jpg" class="swiper-slide">
@@ -103,7 +84,7 @@
                 </div>
             </div>
             <!-- propiedad venta 2 -->
-            <div class="casa">
+            <div class="casa" categoria="otros">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <img src="Ventas/img/V2/img1.jpg" class="swiper-slide">
@@ -126,7 +107,7 @@
                 </div>
             </div>
             <!-- propiedad venta 1 -->
-            <div class="casa departamento">
+            <div class="casa" categoria="departamento">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <img src="Ventas/img/V1/img1.jpg" class="swiper-slide">
@@ -173,16 +154,14 @@
                     <a href="https://www.instagram.com/jdfinmuebles/"
                         class="redes__sociales-instagram footer__links-info">Instagram</a>
                 </div>
-            </div>
-            <div class="footer__contacto">
+            </div><!-- <div class="footer__contacto">
                 <h2 class="footer__infomarcion-titulo">Contactanos en:</h2>
                 <div class="footer__contactos-liks">
                     <a href="#" class="footer__contacto-cel footer__links-info">WhatsApp</a>
                     <a href="#" class="footer__contacto-tel footer__links-info">4691201</a>
                 </div>
-            </div>
+            </div> -->
         </section>
-
         <section class="footer__ubicacion">
             <h2 class="footer__ubicacion-title">Ubicaicon de la compañia</h2>
             <div class="footer__ubicacion-mapa">
@@ -202,7 +181,8 @@
             <a href="#"><img src="img/gmail-logo.png" alt="logo de Gmail"></a>
         </div>
     </div>
-    <!-- <script src="scrip.js"></script> -->
+    <script src="jquery-3.2.1.js"></script>
+    <script src="filtro.js"></script>
     <script type="module" src="swipe.js"></script>
 </body>
 
