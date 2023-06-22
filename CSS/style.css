@@ -82,8 +82,8 @@ main {
 .presentacion {
   width: 100%;
   height: calc(100vh - 112.44px);
-  background-image: url(../img/banner3.webp);
-  background-position: bottom left;
+  background-image: url(../img/prueba.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   filter: grayscale(40%);
 }
