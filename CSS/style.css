@@ -38,8 +38,12 @@ main {
   align-items: center;
 }
 .header__logo {
-  width: 20rem;
+  width: 12rem;
+  height: 9.5rem;
   padding: 0.5rem;
+}
+.header__cci {
+  width: 3rem;
 }
 .header_nav {
   display: flex;
@@ -82,7 +86,7 @@ main {
 .presentacion {
   width: 100%;
   height: calc(100vh - 112.44px);
-  background-image: url(../img/prueba.jpg);
+  background-image: url(../img/fondo-banner-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   filter: grayscale(40%);
