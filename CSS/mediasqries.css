@@ -15,7 +15,8 @@
 @media (min-width: 769px) and (max-width: 1023px) {
   /* index  */
   .header__link {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 1.5rem;
   }
   .presentacion {
     background-position: center center;
@@ -26,8 +27,8 @@
     justify-content: center;
   }
   .mapaDePropiedades iframe {
-    width: 350px;
-    height: 300px;
+    width: 320px;
+    height: 280px;
   }
   /* alquileres y venta  */
   .casa {
@@ -71,7 +72,8 @@
     text-align: center;
   }
   .header__link {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    padding: 1rem 0;
   }
   .presentacion {
     background-position: center center;
@@ -85,7 +87,7 @@
     justify-content: space-evenly;
   }
   .mapaDePropiedades iframe {
-    width: 450px;
+    width: 400px;
     height: 300px;
   }
   .presentacion__textos {
@@ -182,7 +184,8 @@
     text-align: center;
   }
   .header__link {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding: 0;
   }
   .presentacion {
     background-position: center center;
@@ -206,7 +209,7 @@
     display: block;
   }
   .mapaDePropiedades iframe {
-    width: 300px;
+    width: 260px;
     height: 450px;
   }
   .footer {

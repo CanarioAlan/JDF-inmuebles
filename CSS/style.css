@@ -86,12 +86,15 @@ main {
 .presentacion {
   width: 100%;
   height: calc(100vh - 112.44px);
-  background-image: url(../img/fondo-banner-2.jpg);
+  /* background-image: url(../img/fondo-banner-2.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   filter: grayscale(40%);
 }
-
+.presentacion img {
+  width: 100%;
+  height: 100%;
+}
 /*propiedades populares */
 
 /*mapas de propiedades*/
@@ -192,6 +195,9 @@ main {
 }
 .redes__sociales-instagram {
   background-image: url(../img/logo-instagram.webp);
+}
+.redes__sociales-email {
+  background-image: url(../img/correo-electronico.png);
 }
 .footer__ubicacion {
   text-align: center;
