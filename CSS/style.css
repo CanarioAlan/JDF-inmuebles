@@ -15,6 +15,7 @@
   --Cceleste: #20b9fc;
   --Cazul: #5632fa;
   --CNegro: #000000;
+  /* colores de tarjeta  el mas oscuro 379281 y el mas claro a0e7d2 */
 }
 /* rem vale a 10px  */
 html {
@@ -86,8 +87,9 @@ main {
 .presentacion {
   width: 100%;
   height: calc(100vh - 112.44px);
-  /* background-image: url(../img/fondo-banner-2.jpg); */
-  background-position: center center;
+  /* background-image: url(../img/banner-cambios.jpg); */
+  background-position: center;
+  /* background-size: calc(70% + 800px); */
   background-repeat: no-repeat;
   filter: grayscale(40%);
 }
